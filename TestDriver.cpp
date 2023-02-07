@@ -45,13 +45,13 @@ int main()
 	while (command != "Quit")
 	{
 		//cout << "Command: " << command;
-		if (command == "AddItem")
+		if (command == "PutItem")
 		{
 			inFile >> item;
 			//cin >> item;
 			list.AddItem(item);
-            		cout << item;
-            		cout << " added to list." << endl;
+            cout << item;
+            cout << " added to list." << endl;
 			outFile << item;
 			outFile << " added to list." << endl;
 		}
@@ -92,7 +92,7 @@ int main()
             }
 		}
 		else if (command == "MakeEmpty") {
-			out << "Make list empty." << endl;
+			outFile << "Make list empty." << endl;
 			outFile << "Make list empty." << endl;
 			list.MakeEmpty();
 		}
